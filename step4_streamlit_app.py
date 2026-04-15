@@ -23,10 +23,9 @@ import cohere
 # ── 설정 ──────────────────────────────────────────
 CHROMA_DIR     = "./chroma_db"
 COLLECTION     = "shopping_rag"
-# 로컬: .streamlit/secrets.toml 에서 읽기
-# 배포: Streamlit Cloud 환경변수에서 읽기
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "YOUR_API_KEY_HERE")
-COHERE_API_KEY = os.environ.get("COHERE_API_KEY", "YOUR_COHERE_KEY_HERE")
+# 로컬: os.environ / 배포: Streamlit Cloud st.secrets
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY") or st.secrets.get("OPENAI_API_KEY", "")
+COHERE_API_KEY = os.environ.get("COHERE_API_KEY") or st.secrets.get("COHERE_API_KEY", "")
 cohere_client = cohere.ClientV2(COHERE_API_KEY)
 # ──────────────────────────────────────────────────
 
