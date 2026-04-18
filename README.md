@@ -96,6 +96,10 @@ response = client.chat.completions.create(
 )
 ```
 
+![번역 진행 과정](images/translation_progress.png)
+
+1,359개 번역 완료 (성공: 1,359개 / 실패: 0개)
+
 **결과:**
 
 ![리뷰 번역 효과](images/review_translation_result.png)
