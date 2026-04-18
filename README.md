@@ -11,6 +11,7 @@
 
 🚀 **라이브 데모**: [https://shopping-rag-v2-db2ox3udz3gbsunb7m8jbq.streamlit.app](https://shopping-rag-v2-db2ox3udz3gbsunb7m8jbq.streamlit.app)
 
+
 ---
 
 ## v1과의 차이점
@@ -227,7 +228,7 @@ streamlit run step4_streamlit_app.py
 
 ---
 
-## 배운 점
+## 개발 인사이트
 
 - 데이터 언어 불일치는 아무리 좋은 모델을 써도 검색 자체가 불가능하게 만든다 — 번역으로 해결
 - 청크 사이즈 실험은 데이터 특성 파악이 선행되어야 의미 있다
