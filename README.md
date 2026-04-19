@@ -243,3 +243,4 @@ streamlit run step4_streamlit_app.py
 - [ChromaDB 공식 문서](https://docs.trychroma.com)
 - [Cohere Rerank 문서](https://docs.cohere.com/docs/rerank)
 - v1 레포: [shopping-faq-rag](https://github.com/HyeonBin0118/shopping-faq-rag)
+- v3 레포: [shopping-rag-v3](https://github.com/HyeonBin0118/shopping-rag-v3)
