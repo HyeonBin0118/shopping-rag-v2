@@ -174,5 +174,4 @@ if __name__ == "__main__":
             f.write(json.dumps(chunk, ensure_ascii=False) + "\n")
 
     print(f"\n저장 완료: {OUTPUT_PATH} ({len(all_chunks)}개 청크)")
-    print("다음 단계: step2_embedding.py에서 CHUNKS_PATH를")
-    print("  'chunks_translated.jsonl' 로 변경 후 재임베딩 실행")
+    

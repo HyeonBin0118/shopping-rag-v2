@@ -8,7 +8,7 @@ RAG 챗봇 2단계: 임베딩 + ChromaDB 벡터 저장
 [변경 이유]
  - LLM을 GPT-4o-mini로 교체함에 따라 임베딩도 같은 OpenAI 생태계로 통일
  - text-embedding-3-small은 MiniLM 대비 한국어/영어 혼합 검색 정확도가 높음
- - 1,784개 기준 임베딩 비용 약 $0.003 (사실상 무료)
+ - 1,784개 기준 임베딩 비용 약 $0.003 
 
 실행 전 설치:
     pip install openai chromadb tqdm
@@ -132,7 +132,7 @@ if __name__ == "__main__":
     # 2. 벡터DB 구축 (OpenAI 임베딩으로 재구축)
     collection = build_vectordb(chunks)
 
-    # 3. 검색 테스트 — Ollama 버전과 유사도 점수 비교해보세요
+    # 3. 검색 테스트 — Ollama 버전과 유사도 점수 비교
     test_search(collection, "배송 며칠 걸려요?")
     test_search(collection, "환불 정책이 어떻게 돼요?")
     test_search(collection, "hiking boots waterproof")
